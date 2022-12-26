@@ -1,0 +1,11 @@
+tr,th, td{
+    color: green;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    
+}
+#quarterWithMaxSale{
+    font-size: 24px;
+    color: red;
+}

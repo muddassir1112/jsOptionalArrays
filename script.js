@@ -88,7 +88,7 @@ function minimumConsumptionOfBread() {
   let tempKolkata = 0;
   let tempDelhi = 0;
   let tempMumbai = 0;
-  let arr = [];
+//   let arr = [];
   let city = "";
   for (var i = 0, l1 = quantity.length; i < l1; i++) {
     tempKolkata += quantity[i][3];
@@ -106,15 +106,19 @@ function minimumConsumptionOfBread() {
     "locationWithMinSaleOfBread"
   ).innerHTML = `${city} has the minimum consumption of Bread.`;
   //function to delete the location which has the minimum consumption of Bread
-  arr = quantity.map(function (val) {
+  quantity.map(function (val) {
     return val.splice(4, 3);
   });
   //display table after removing the location which has the minimum consumption of Bread
   let table = `<table border=1 class="inputTable">
-            <tr> <th colspan="4">Location = 'Kolkata'</th>
+            <tr> 
+            <th></th>
+            <th colspan="3">Location = 'Kolkata'</th>
             <th colspan="3">Location = 'Mumbai'</th>
             </tr>
-            <tr> <td colspan = "4">item</td>
+            <tr> 
+            <td></td>
+            <td colspan = "3">item</td>
             <td colspan = "3">item</td>
             </tr>
             <tr>
